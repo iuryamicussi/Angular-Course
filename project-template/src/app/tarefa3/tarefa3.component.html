@@ -1,0 +1,5 @@
+<button class="btn" (click)="onDisplayDetailsClick()">Display Details</button>
+<p *ngIf="isParagraphDisplay()">Secret password = tuna</p>
+<p *ngFor="let click of clickArray"
+  [ngStyle]="{'background-color': getBackgroundColorLog(click)}"
+  [ngClass]="{'fifth':getBackgroundColorLog(click) == 'blue' ? true:false}">{{click}}</p>
